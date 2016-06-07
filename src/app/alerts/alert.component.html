@@ -1,3 +1,16 @@
-<div *ngIf="alert">
-    We selected alert <input class="form-control" [(ngModel)]="alert.name" />
+<div style="padding: 15px 25px;" *ngIf="alert">
+    <form>
+        <div class="form-group">
+            <label for="alertName">Nom de l'alerte</label>
+            <input class="form-control" id="alertName" [(ngModel)]="alert.name" placeholder="Appartement Paris">
+        </div>
+        <div class="form-group">
+            <label for="alertUrl">URL</label>
+            <input class="form-control" id="alertUrl" [(ngModel)]="alert.url" placeholder="https://www.leboncoin.fr/...">
+        </div>
+        <div class="form-group">
+            <label for="alertDistance">Distance limite (0 = pas de limite)</label>
+            <input class="form-control" id="alertUrl" [(ngModel)]="alert.distance_limit" placeholder="distance en km">
+        </div>
+    </form>
 </div>
