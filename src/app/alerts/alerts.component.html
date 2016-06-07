@@ -1,3 +1,9 @@
-<p>
-  alerts works!
-</p>
+<app-alert [alert]="selectedAlert"></app-alert>
+
+<ul class="alerts">
+  <li *ngFor="let alert of alerts"
+    (click)="onSelect(alert)"
+    [class.selected]="alert===selectedAlert">
+    <span class="badge">{{alert.id}}</span> {{alert.name}}
+  </li>
+</ul>

@@ -1,0 +1,9 @@
+ul.alerts {
+    list-style-type: none;
+}
+ul.alerts > li {
+    font-weight: normal;
+}
+ul.alerts > li.selected {
+    font-weight: bold;
+}
